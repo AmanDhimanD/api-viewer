@@ -1,0 +1,35 @@
+{
+  "patients": [
+    {
+      "id": 2,
+      "patientid": 1003,
+      "patientname": "Jane Smith",
+      "age": 45,
+      "sex": "Female",
+      "BirthDate": "1978-05-15",
+      "BirthTime": "14:30:00"
+    }
+  ],
+  "studies": [],
+  "series": [
+    {
+      "seriesInstanceUID": 1,
+      "Modality": "CT",
+      "SeriesNumber": 1,
+      "SeriesDate": "2023-07-01",
+      "SeriesTime": "10:30:00",
+      "BodyPartExamined": "Abdomen",
+      "SeriesDescription": "Abdomen CT Series"
+    }
+  ],
+  "images": [
+    {
+      "SOPInstanceUID": 1,
+      "instanceNumber": 1,
+      "SOPClassUID": "CT Image Class",
+      "TransferSyntaxUID": "TransferSyntax001",
+      "FileUrl": "http://example.com/image001.jpg",
+      "seriesInstanceUID": 1
+    }
+  ]
+}
