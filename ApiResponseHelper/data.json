@@ -1,0 +1,83 @@
+{
+    "Patient": [
+      {
+        "id": 1,
+        "patientid": 1001,
+        "patientname": "John Doe",
+        "age": 30,
+        "sex": "Male",
+        "BirthDate": "1990-01-01",
+        "BirthTime": "08:00:00"
+      },
+      {
+        "id": 2,
+        "patientid": 1002,
+        "patientname": "Jane Smith",
+        "age": 45,
+        "sex": "Female",
+        "BirthDate": "1978-05-15",
+        "BirthTime": "14:30:00"
+      }
+    ],
+    "Study": [
+      {
+        "StudyInstanceUid": 1,
+        "StudyDate": "2023-07-01",
+        "StudyTime": "10:15:00",
+        "AccessionNumber": 12345,
+        "StudyID": 1001,
+        "StudyDescription": "Abdominal CT Scan",
+        "ReferringPhysiciansName": "Dr. Smith",
+        "PerformingPhysiciansName": "Dr. Johnson"
+      },
+      {
+        "StudyInstanceUid": 2,
+        "StudyDate": "2023-07-02",
+        "StudyTime": "14:30:00",
+        "AccessionNumber": 54321,
+        "StudyID": 1002,
+        "StudyDescription": "Chest X-Ray",
+        "ReferringPhysiciansName": "Dr. Brown",
+        "PerformingPhysiciansName": "Dr. Davis"
+      }
+    ],
+    "Series": [
+      {
+        "seriesInstanceUID": 1,
+        "Modality": "CT",
+        "SeriesNumber": 1,
+        "SeriesDate": "2023-07-01",
+        "SeriesTime": "10:30:00",
+        "BodyPartExamined": "Abdomen",
+        "SeriesDescription": "Abdomen CT Series"
+      },
+      {
+        "seriesInstanceUID": 2,
+        "Modality": "X-ray",
+        "SeriesNumber": 1,
+        "SeriesDate": "2023-07-02",
+        "SeriesTime": "14:45:00",
+        "BodyPartExamined": "Chest",
+        "SeriesDescription": "Chest X-Ray Series"
+      }
+    ],
+    "Image": [
+      {
+        "SOPInstanceUID": 1,
+        "instanceNumber": 1,
+        "SOPClassUID": "CT Image Class",
+        "TransferSyntaxUID": "TransferSyntax001",
+        "FileUrl": "http://example.com/image001.jpg",
+        "seriesInstanceUID": 1
+      },
+      {
+        "SOPInstanceUID": 2,
+        "instanceNumber": 2,
+        "SOPClassUID": "X-ray Image Class",
+        "TransferSyntaxUID": "TransferSyntax002",
+        "FileUrl": "http://example.com/image002.jpg",
+        "seriesInstanceUID": 2
+      }
+    ]
+  }
+  
